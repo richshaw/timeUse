@@ -59,9 +59,11 @@ shinyServer(function(input, output) {
     bin <- paste("b", input$timeOfDay, sep="")
     
     # Select data based on use input
-    selectedData <- data[data$sex == input$sex & data$agegrp == input$ageGrp,
-                         c('activity',bin)]
+    selectedData <- data[data$sex == input$sex & data$agegrp == input$ageGrp, c('activity',bin)]
     
+    # Order data
+    selectedData <- selectedData[order(selectedData[[bin]]),]
+
     par(las=2) # make label text perpendicular to axis
     par(mar=c(5,20,0,5)) # increase y-axis margin.
     

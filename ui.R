@@ -6,6 +6,11 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("Most Common Use of Time, By Age and Sex"),
   
+  # Description
+  p( "You often hear averages on how people spend or should spend their time. For example, people sleep 7 to 8 hours per day. However, some people sleep alot more others alot less."),
+  
+  p("The app below allows you to compare how people spend their time by age and sex.The slider at the top allows you to change the time of day buy half-hour intervals. The selection boxes underneath allow you to change the sex and age.The chart shows the the percent of people within a particular cohort who are doing that activity at that time of day."),
+  
   # Change slider labels to customized 30 min segements
   tags$head(includeScript('slider.js')),
   
