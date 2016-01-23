@@ -3,9 +3,9 @@
 Criteria for assignment:
 
 * Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application. - DONE
-* Deploy the application on Rstudio's shiny server
-* Share the application link by pasting it into the provided text box
-* Share your server.R and ui.R code on github
+* Deploy the application on Rstudio's shiny server - DONE
+* Share the application link by pasting it into the provided text box - DONE
+* Share your server.R and ui.R code on github - DONE
 
 * Some form of input (widget: textbox, radio button, checkbox, ...) - DONE
 * Some operation on the ui input in sever.R - DONE
